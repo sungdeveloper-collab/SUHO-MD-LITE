@@ -1057,7 +1057,7 @@ conn.ev.on("connection.update", async (update) => {
 📌 ᴘʀᴇғɪx: ${PREFIX}  
 ${channelStatus}
 
-🍴 ғᴏʀᴋ ɴ ⭐ ᴍʏ ʀᴇᴘᴏ: https://github.com/NaCkS-ai/Sung-Sung-Suho-MD/fork
+🍴 ғᴏʀᴋ ɴ ⭐ ᴍʏ ʀᴇᴘᴏ: https://github.com/NaCkS-ai/Sung-Suho-MD/fork
                     `;
 
                     // Send welcome message to user's DM with proper JID format and requested style
