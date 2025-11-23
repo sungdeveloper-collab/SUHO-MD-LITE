@@ -101,7 +101,7 @@ let PREFIX = process.env.PREFIX || ".";
 // Bot configuration from environment variables
 const BOT_NAME = process.env.BOT_NAME || "suho - ʟɪᴛᴇ";
 const OWNER_NAME = process.env.OWNER_NAME || "Lord Sung";
-const MENU_IMAGE_URL = process.env.MENU_IMAGE_URL || "https://ibb.co/Y4Gt7tGJ";
+const MENU_IMAGE_URL = process.env.MENU_IMAGE_URL || "https://files.catbox.moe/s2f6pl.jpg";
 const REPO_LINK = process.env.REPO_LINK || "https://github.com/NaCkS-ai/Sung-Suho-MD";
 
 // Auto-status configuration
