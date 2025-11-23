@@ -4,10 +4,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm install",
     "start": "node index.js"
   },
   "keywords": [],
-  202"author": "Xdking2",
+  "author": "Xdking2",
   "license": "ISC",
   "description": "",
   "dependencies": {
