@@ -31,7 +31,7 @@ malvin({
     }
 
     const buffer = await quoted.download();
-    const filePath = path.join(os.tmpdir(), "malvin_xd.jpg");
+    const filePath = path.join(os.tmpdir(), "suho_lite_md.jpg");
     fs.writeFileSync(filePath, buffer);
 
     let imageUrl, lastError;
@@ -62,7 +62,7 @@ malvin({
       `\`✅ IMAGE UPLOADED SUCCESSFULLY!\`\n\n` +
       `📂 *File Size:* ${buffer.length} bytes\n` +
       `🔗 *URL:* ${imageUrl}\n\n` +
-      `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ ᴍᴀʟᴠɪɴ ᴋɪɴɢ`
+      `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ *SUHO LITE MD* ⚡`
     );
   } catch (e) {
     console.error("tourl error:", e);
@@ -91,7 +91,7 @@ malvin({
                 mime.includes("video") ? ".mp4" :
                 mime.includes("audio") ? ".mp3" : "";
     const name = `file${ext}`;
-    const tmp = path.join(os.tmpdir(), `catbox_${Date.now()}${ext}`);
+    const tmp = path.join(os.tmpdir(), `suho_upload_${Date.now()}${ext}`);
     fs.writeFileSync(tmp, buffer);
 
     const form = new FormData();
@@ -114,7 +114,7 @@ malvin({
       `*✅ ${type} Uploaded!*\n\n` +
       `📁 *Size:* ${formatBytes(buffer.length)}\n` +
       `🔗 *URL:* ${res.data}\n\n` +
-      `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ-xᴅ`
+      `> © *SUHO LITE MD* ⚡`
     );
   } catch (e) {
     console.error("tourl2 error:", e);
@@ -136,7 +136,7 @@ malvin({
   react: "📄",
   desc: "Upload document and ask AI about its contents.",
   category: "utility",
-  use: ".docanalyze [your question] [reply to doc]",
+  use: ".docanalyze [your question] (reply to doc)",
   filename: __filename
 }, async (client, m, args, { reply }) => {
   try {
@@ -150,7 +150,7 @@ malvin({
     const buffer = await q.download();
     const ext = mime.includes("pdf") ? ".pdf" : mime.includes("word") ? ".doc" : ".docx";
     const name = `document${ext}`;
-    const tmp = path.join(os.tmpdir(), `doc_${Date.now()}${ext}`);
+    const tmp = path.join(os.tmpdir(), `suho_doc_${Date.now()}${ext}`);
     fs.writeFileSync(tmp, buffer);
 
     const form = new FormData();
@@ -176,7 +176,7 @@ malvin({
       `❓ *Question:* ${question}\n` +
       `🔗 *Doc URL:* ${docUrl}\n\n` +
       `🧠 *AI Response:*\n${result.BK9 || result.response || "No answer."}\n\n` +
-      `> © ᴍᴀʟᴠɪɴ-xᴅ`
+      `> © *SUHO LITE MD* ⚡`
     );
   } catch (e) {
     console.error("docanalyze error:", e);
